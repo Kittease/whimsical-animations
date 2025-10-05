@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fall: fall ease-out forwards;
+
+  @keyframes fall {
+    0% {
+      transform: translateX(-50%) translateY(-100%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(-50%) translateY(var(--fall-distance));
+      opacity: 0;
+    }
+  }
+}
