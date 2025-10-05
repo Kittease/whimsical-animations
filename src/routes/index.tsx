@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { random } from "lodash";
+import lodash from "lodash";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+
+const { random } = lodash;
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
