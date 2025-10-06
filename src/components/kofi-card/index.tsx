@@ -1,12 +1,12 @@
 import lodash from "lodash";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/style";
 
 import "./index.css";
 
 const { random } = lodash;
 
-const EMOJIS_TO_USE = ["🎉", "🍺", "🤩", "🎊", "🍻", "💸"];
+const EMOJIS_TO_USE = ["🎉", "🍺", "🤩", "🎊", "🍻"];
 const ANIMATION_SPEED = 2000;
 
 const KofiCard = () => {
@@ -65,8 +65,12 @@ const KofiCard = () => {
           alt="user avatar"
         />
 
-        <h1 className="text-center font-bold text-2xl">
-          Someone Bought You A Beer!
+        <h1 className={cn("text-center font-bold", "text-lg md:text-2xl")}>
+          You just rated a new beer on{" "}
+          <a href="https://zythogora.com" className="text-orange-400 underline">
+            zythogora.com
+          </a>
+          !
         </h1>
       </div>
     </div>

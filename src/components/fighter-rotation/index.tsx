@@ -1,7 +1,7 @@
 import { type CSSProperties, useId, useState } from "react";
 
 import "./index.css";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/style";
 
 const FighterRotation = () => {
   const sliderId = useId();
