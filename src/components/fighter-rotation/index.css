@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fighter-rotation: fighter-rotation ease-in-out infinite alternate;
+
+  @keyframes fighter-rotation {
+    from {
+      transform: rotate(calc(-1 * var(--rotation)));
+    }
+    to {
+      transform: rotate(var(--rotation));
+    }
+  }
+}
