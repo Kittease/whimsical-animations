@@ -16,7 +16,12 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "TanStack Start Starter" },
+      { title: "Whimsical Animations Exercises by Carl-Adrien Mercey" },
+      {
+        name: "description",
+        content:
+          "My take on the exercises from the course Whimsical Animations from Josh W. Comeau",
+      },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
